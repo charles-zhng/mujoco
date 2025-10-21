@@ -181,7 +181,7 @@ def _wp_to_np_type(wp_field: Any, name: str = '') -> Any:
     return wp_field.numpy()
 
   # static
-  static_types = (bool, int, float, np.bool, np.int32, np.int64,
+  static_types = (bool, int, float, np.int32, np.int64,
                   np.float32, np.float64)  # fmt: skip
   is_static = lambda x: isinstance(x, static_types)
   if is_static(wp_field):

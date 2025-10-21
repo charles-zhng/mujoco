@@ -591,7 +591,7 @@ def sensor_acc(m: Model, d: Data) -> Data:
 
         if objtype == ObjType.UNKNOWN and reftype == ObjType.UNKNOWN:
           # all contacts match
-          match = np.ones(ncon, dtype=np.bool)
+          match = np.ones(ncon, dtype=bool)
 
           # matched and reduced contact ids
           sort = _reduce(reduce, match)
